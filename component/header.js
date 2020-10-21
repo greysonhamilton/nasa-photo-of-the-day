@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Data from "data";
 
 function Header() {
     
@@ -7,7 +8,7 @@ function Header() {
 
     useEffect((() => {
 
-        axios.get('https://api.nasa.gov/#apod');
+        axios.get('https://api.nasa.gov/apod?api_key=DEMO_KEY')
 
         .then((res) => {
             console.log('name the log', res.data)
@@ -23,15 +24,16 @@ function Header() {
     }, []));
 
     return (
+
         <div>
-        <header>
-            <h1>NASA Photo of the Day!</h1>
-            <h2>Date: {Data.date}</h2>
-        </header>
-        <main>
-            <content date = {data} />
-        </main>
-    </div>
+            <header>
+                <h1>NASA Photo of the Day!</h1>
+                <h2>Date: {Data.date}</h2>
+            </header>
+            <main>
+                <content date = {data} />
+            </main>
+        </div>
     
 )
 
