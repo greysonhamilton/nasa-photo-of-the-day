@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "../component/header";
+import Header from './component/header';
+import Image from "./component/image";
 import "./App.css";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 
     <div className="App">
       <Header />
+      <Main />
     </div>
 
   );
