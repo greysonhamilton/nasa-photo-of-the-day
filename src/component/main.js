@@ -1,10 +1,13 @@
 import React from 'react';
-import Card from 'card';
+import Image from 'image';
 
 const Main = () => {
 
     return (
 
+        <main>
+            <Image />
+        </main>
     )
 }
 

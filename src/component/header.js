@@ -1,12 +1,15 @@
 import React from "react";
+import Image from 'image';
 
-function Header(props) {
+const Header = () => {
+
+    const today = new Date();
     
     return (
 
             <header>
                 <h1>NASA Photo of the Day!</h1>
-                <h2>Date: {props.date}</h2>
+                <h2>Date: {today}</h2>
             </header>
     
 )
