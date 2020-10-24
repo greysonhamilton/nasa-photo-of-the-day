@@ -1,6 +1,6 @@
 import React from "react";
-import Header from './component/header';
-import Main from "./component/main";
+import HeaderNav from './component/HeadNav';
+import MainContent from './component/MainContent';
 import "./App.css";
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
   return (
 
     <div className="App">
-      <Header />
-      <Main />
+      <HeaderNav />
+      <MainContent />
     </div>
 
   );

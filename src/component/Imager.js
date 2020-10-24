@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
-import Card from 'card';
 
-const Image = () => {
+const Imager = () => {
 
-    const [data, setData] = useState([]);
-
-    const today = new Date();
-    console.log(today);
+    const [data, setData] = useState({});
 
     useEffect((() => {
 
@@ -40,4 +36,4 @@ const Image = () => {
     )
 }
 
-export default Image
+export default Imager
