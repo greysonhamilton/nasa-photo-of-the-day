@@ -1,15 +1,19 @@
 import React from "react";
+import HeaderNav from './component/HeadNav';
+import MainContent from './component/MainContent';
 import "./App.css";
 
 function App() {
+
   return (
+
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      <HeaderNav />
+      <MainContent />
     </div>
+
   );
+
 }
 
 export default App;
